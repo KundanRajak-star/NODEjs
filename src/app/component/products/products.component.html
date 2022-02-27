@@ -1,0 +1,73 @@
+<!-- <p>products works!</p> -->
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('electronics')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+                <h6>Electronics</h6>
+
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('fashion')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
+                <h6>Fashion</h6>
+
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('jewelery')">
+                <img style="width: 62px; margin-top: 5px;"
+                    src="https://rukminim1.flixcart.com/image/580/696/kkh6zrk0/jewellery-set/o/w/z/gt-ns-862-matushri-art-original-imafzt9teacakjyn.jpeg?q=50"
+                    alt="">
+                    
+                    
+                <h6>Jewellery</h6>
+
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('jewelery')">
+                <img style="width: 62px; margin-top: 5px;"
+                    src="https://scontent.fdel52-1.fna.fbcdn.net/v/t1.6435-9/c104.0.414.414a/p552x414/46950136_714126815626784_5720868104372748288_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=da31f3&_nc_ohc=2vUGro7YxioAX_AzDj7&_nc_ht=scontent.fdel52-1.fna&oh=00_AT87MP6OXAFGMj4nLHPt5Yc0KCqbVyVef35iWxfdkuW5bQ&oe=61F453C7"
+                    alt="">
+                    <a href="https://www.metacritic.com/browse/movies/release-date/theaters/date">movies</a>
+                    
+                <!-- <h6>Kundan</h6> -->
+
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('jewelery')">
+                <img style="width: 62px; margin-top: 5px;"
+                    src="data:image/png;base64,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"
+                    alt="">
+                    <a href="https://beta.robomq.io/connect/dashboard">Robomq</a>
+                    
+                <!-- <h6>Kundan</h6> -->
+
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory |filter:searchKey:'title'">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style ="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                <p style ="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong>${{item.price}}</p>
+   
+                <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+            </div> 
+        </ng-container>
+        
+    </div>
+</div>
